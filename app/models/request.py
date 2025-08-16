@@ -1,6 +1,6 @@
 from sqlalchemy import (
     Column,
-    BigInteger,
+    Integer,
     String,
     JSON,
     Text,
@@ -12,7 +12,7 @@ from ..db import Base  # 동일 패키지의 Base(모든 모델 부모)
 
 class Request(Base):  # 수요자 요청(의뢰서) 모델
     __tablename__ = "requests"  # 테이블명: requests
-    id = Column(BigInteger, primary_key=True, autoincrement=True)  # PK(자동증가)
+    id = Column(Integer, primary_key=True, autoincrement=True)  # PK(자동증가)
     title = Column(Text)  # 요청 제목
     goal = Column(Text)  # 달성하고 싶은 목표/배경
     budget_range = Column(String)  # 예산 범위(예: "20~40만원")

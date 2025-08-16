@@ -1,0 +1,4 @@
+﻿[
+  {"name":"김가람","region":"서울 강남","rate_per_hour":40000,"offline_ok":true,
+   "availability_json":{"mon":[{"start":"19:00","end":"22:00"}]},"rating_avg":5}
+]

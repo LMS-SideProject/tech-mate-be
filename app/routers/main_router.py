@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from ..db import get_db
 from ..models import Expert, Request
 
-router = APIRouter(prefix="/api", tags=["api"])
+router = APIRouter(prefix="", tags=["api"])
 
 
 @router.get("/seed-check")
